@@ -3,6 +3,10 @@
 body {
     font-family: "Martel Sans", sans-serif; /* Applying Martel Sans as the default font for the entire document */
 }
+ 
+a {
+    text-decoration:none;
+}
 
 .top-right-corner {
     position: fixed; 
@@ -22,7 +26,7 @@ body {
     display: inline-block; 
     vertical-align: middle; 
 }
-.join-now-button input[type="submit"] {
+.join-now-button {
     background-color: #8053FF; 
     color: white; 
     border: none;
@@ -35,40 +39,61 @@ body {
     margin-right: 20px
 }
 
-.join-now-button input[type="submit"]:hover {
-    background-color: #6b3fe0; 
-}
-
 .button-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     margin-bottom: 20px; 
 }
-
-.button-container input[type="submit"] {
-    background-color: #8053FF;
-    color: white;
+.become-coder-button {
+    background-color: #8053FF; 
+    color: white; 
     border: none;
-    padding: 10px 20px;
+    padding: 10px 20px; 
     font-size: 16px;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
-
-.button-container input[type="submit"]:hover {
-    background-color: #6b3fe0;
-}
-
-.become-manager-button input[type="submit"] {
+.become-manager-button {
     background-color: white;
     color: #8053FF;
+    border: 2px solid #8053FF;
+    border-radius: 100px;
+}
+.centered-top {
+    text-align: center;
+}
+.title {
+    color: #8053FF;
+    text-align: center;
+}
+/* Square tiles 2x2 */
+.square-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; 
+    margin-top: 20px;
 }
 
-.become-manager-button input[type="submit"]:hover {
-    background-color: #f0f0f0;
+.square {
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px; 
+}
+
+.square h2 {
+    margin-bottom: 10px; 
+}
+
+footer {
+    text-align: center;
 }
 .martel-sans-extralight {
     font-family: "Martel Sans", sans-serif;
