@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+body {
+    font-family: "Martel Sans", sans-serif; /* Applying Martel Sans as the default font for the entire document */
+}
+
+.top-right-corner {
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+}
+
+.top-right-corner p {
+    margin: 0;
+}
+
+.top-right-corner a {
+    margin-right: 10px;
+}
+
+.join-now-button {
+    display: inline-block; 
+    vertical-align: middle; 
+}
+.join-now-button input[type="submit"] {
+    background-color: #8053FF; 
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    margin-top: 20px; 
+    margin-right: 20px
+}
+
+.join-now-button input[type="submit"]:hover {
+    background-color: #6b3fe0; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px; 
+}
+
+.button-container input[type="submit"] {
+    background-color: #8053FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.button-container input[type="submit"]:hover {
+    background-color: #6b3fe0;
+}
+
+.become-manager-button input[type="submit"] {
+    background-color: white;
+    color: #8053FF;
+}
+
+.become-manager-button input[type="submit"]:hover {
+    background-color: #f0f0f0;
+}
+.martel-sans-extralight {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .martel-sans-light {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .martel-sans-regular {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .martel-sans-semibold {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .martel-sans-bold {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .martel-sans-extrabold {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .martel-sans-black {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
