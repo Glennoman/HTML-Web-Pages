@@ -2,6 +2,8 @@
 
 body {
     font-family: "Martel Sans", sans-serif; /* Applying Martel Sans as the default font for the entire document */
+    background-image: url(/assets/bg.svg);
+    padding: 20px;
 }
  
 a {
@@ -40,11 +42,12 @@ a {
 }
 
 .button-container {
-    display: flex;
+    display: flex; /* Use flexbox */
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px; 
+    align-items: center; /* Center vertically */
+    gap: 20px;
+    margin-bottom: 10px;
+    padding: 10 50px;
 }
 .become-coder-button {
     background-color: #8053FF; 
@@ -60,16 +63,17 @@ a {
 .become-manager-button {
     background-color: white;
     color: #8053FF;
-    border: 2px solid #8053FF;
-    border-radius: 100px;
+    border: 1px solid #8053FF;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 0 20px;
+    text-align: center;
 }
 .centered-top {
     text-align: center;
 }
-.title {
-    color: #8053FF;
-    text-align: center;
-}
+
 /* Square tiles 2x2 */
 .square-container {
     display: grid;
@@ -82,11 +86,31 @@ a {
 .square {
     background-color: #f0f0f0; 
     border: 1px solid #ccc; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 120px; 
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 90px; 
+}
+
+button, button:focus {
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Change cursor to pointer */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+/* Remove default link styles inside buttons */
+button a {
+    color: inherit; /* Inherit text color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Purple Title centered */
+.title {
+    color: #8053FF;
+    text-align: center;
 }
 
 /* Title-2 config*/
@@ -94,7 +118,43 @@ a {
     text-align: center;
     font-size: 16px;
     border-radius: 50px;
-    margin: auto;
+    margin: 0; /* Reset margin */
+}
+
+/* Purple Title left*/
+.title-3 {
+    color: #8053FF;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: -75px;
+}
+
+/* Black Title left */
+.title-4 {
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: -30px;
+}
+
+/* Purple title left */
+.title-5 {
+    color: #8053FF;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.par {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(78, 78, 78);
+    text-shadow: 0.5px 0.5px 1px #14141480;
+}
+
+.par-light {
+    font-weight: 400;
+    font-style: normal;
+    color: grey;
 }
 
 .square h2 {
