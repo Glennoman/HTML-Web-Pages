@@ -3,25 +3,50 @@
 body {
     font-family: "Martel Sans", sans-serif; /* Applying Martel Sans as the default font for the entire document */
     background-image: url(/assets/bg.svg);
-    padding: 20px;
+    padding: 30px;
+    margin: 0;
 }
  
 a {
     text-decoration:none;
 }
 
-.top-right-corner {
-    position: fixed; 
-    top: 0; 
-    right: 0; 
+header {
+    display: flex; 
+    align-items: flex-start; /* Align items to the top */
 }
 
-.top-right-corner p {
-    margin: 0;
+header img {
+    margin-right: 10px; /* Add margin between the image and the paragraph */
+    margin-top: -15px; /* Adjust margin to move closer to the top */
+}
+
+/* logo-text */
+.header-logo {
+    font-weight: 800;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: -5px; /* Adjust margin to move closer to the top */
+}
+
+.top-right-container {
+    position: relative; /* Set container to relative positioning */
+}
+
+.top-right-corner {
+    position: absolute; /* Set the navigation bar to absolute positioning */
+    top: 5px; /* distance from the top */
+    right: 50px; /* distance from the right */
 }
 
 .top-right-corner a {
-    margin-right: 10px;
+    margin-right: 5px; /* Whitespace inbetween tags */
+    margin-top: 5px;
+}
+
+.centered-top {
+    text-align: center;
+
 }
 
 .join-now-button {
@@ -32,17 +57,17 @@ a {
     background-color: #8053FF; 
     color: white; 
     border: none;
-    padding: 10px 20px; 
+    padding: 5px 10px; 
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer; 
     transition: background-color 0.3s ease; 
-    margin-top: 20px; 
+    margin-top: 5px; 
     margin-right: 20px
 }
 
 .button-container {
-    display: flex; /* Use flexbox */
+    display: flex; 
     justify-content: center;
     align-items: center; /* Center vertically */
     gap: 20px;
@@ -58,6 +83,8 @@ a {
     border-radius: 5px;
     cursor: pointer; 
     transition: background-color 0.3s ease; 
+    margin-top: 20px;
+    margin-bottom: 150px;
 }
 
 .become-manager-button {
@@ -68,9 +95,8 @@ a {
     font-size: 16px;
     border-radius: 10px;
     padding: 0 20px;
-    text-align: center;
-}
-.centered-top {
+    margin-top: 20px;
+    margin-bottom: 150px;
     text-align: center;
 }
 
@@ -86,10 +112,13 @@ a {
 .square {
     background-color: #f0f0f0; 
     border: 1px solid #ccc; 
+    background-color: rgba(240, 240, 240, 0.559); /* RGB and Blur */
+    box-shadow: 2px 2px 4px rgba(5, 50, 200, 0.1); /* Horizontal offset, vertical offset, blur radius, color */
     display: flex; /* Use flexbox */
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
     height: 90px; 
+    border-radius: 10px;
 }
 
 button, button:focus {
@@ -111,6 +140,7 @@ button a {
 .title {
     color: #8053FF;
     text-align: center;
+    margin-bottom: -25px;
 }
 
 /* Title-2 config*/
@@ -118,6 +148,7 @@ button a {
     text-align: center;
     font-size: 16px;
     border-radius: 50px;
+    color: rgb(104, 104, 104);
     margin: 0; /* Reset margin */
 }
 
@@ -155,6 +186,29 @@ button a {
     font-weight: 400;
     font-style: normal;
     color: grey;
+}
+
+/* grid container of 2 col and 3 rows */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows */
+    grid-gap: 20px; /* Gap between grid items */
+}
+
+/* squares styles */
+.grid-item {
+    background-color: #f0f0f0; /* Background color of each grid item */
+    border: 1px solid #ccc; /* Border around each grid item */
+    padding: 20px; /* Padding inside each grid item */
+    border-radius: 10px;
+    
+}
+
+
+.grid-item p {
+    font-size: 16px; /* Font size of the paragraph */
+    margin: 0; /* Remove default margin */
 }
 
 .square h2 {
