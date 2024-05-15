@@ -254,14 +254,17 @@ button a {
 
 #testimonials {
     text-align: center;
-    display: inline-block;
+    /* display: inline-block; */
+    position: relative;
+    left: 40%;
+    bottom: 100px;
+    width: 500px;
 }
 
 .contact-us-container {
     /* position: relative; */
     max-height: 300px;
     overflow: auto;
-    border: 1px solid red;
 }
 
 .contact-us {
@@ -273,6 +276,15 @@ button a {
     width: 100%;
     border-radius: 5%;
     overflow: visible;
+}
+
+.contact-us-container button {
+    background-color: #8053FF; 
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 5px;
 }
 
 .contact-us h1 {
