@@ -205,7 +205,6 @@ button a {
     
 }
 
-
 .grid-item p {
     font-size: 16px; /* Font size of the paragraph */
     margin: 0; /* Remove default margin */
@@ -213,6 +212,44 @@ button a {
 
 .square h2 {
     margin-bottom: 10px; 
+}
+
+.bottom-text {
+    width: 50%;
+    position: relative;
+    left: 600px;
+    top: 200px;
+}
+
+.bottom-text h1 p {
+    margin-top: 20%;
+    display: inline-block;
+}
+
+.bottom-text h1 {
+    font-size: 40px; /* Adjust the font size for <h1> */
+}
+
+.bottom-text p {
+    font-size: 20px; /* Adjust the font size for <p> */
+}
+
+.team-img {
+    position: relative;
+    z-index: -1;
+    bottom: 200px;
+    right: 150px;
+    display: block;
+    margin: 0;
+    border-radius: 20%; /* Use 50% to create a circle */
+    overflow: hidden;
+    width: 700px; /* Adjust width and height to match your image dimensions */
+    height: 800px;
+}
+
+.team-img img {
+    width: 1000px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 footer {
