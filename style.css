@@ -20,7 +20,7 @@ header {
 }
 /* CLA Logo + CLA */
 .left-top {
-    display: flex; /* Ensure the items are aligned as flex items */
+    display: flex;
     align-items: center; /* Center items vertically */
     font-weight: 800;
     font-style: normal;
@@ -30,7 +30,6 @@ header {
 /* Nav container */
 .top-right-corner {
     position: absolute;
-    /* top: 5px;  */
     right: 30px;
 }
 
@@ -142,7 +141,7 @@ header {
     margin-top: 15px;
     width: 170%;
     border: none; /* Removing default border */
-    box-sizing: border-box; /* padding does not affect width like this*/
+    box-sizing: border-box; /* padding does not affect width like this */
 }
 
 /* sign up column */
@@ -168,7 +167,7 @@ header {
     background-color: rgb(38, 15, 92);
     font-size: large;
     color: #555;
-    border-radius: 5px; /* More rounded corners */
+    border-radius: 5px;
     padding: 15px;;
     width: 434px;
     border: none; /* Removing default border */
@@ -219,7 +218,7 @@ header {
     border: 1px solid #ccc; 
     background-color: rgba(240, 240, 240, 0.559); /* RGB and Blur */
     box-shadow: 2px 2px 4px rgba(5, 50, 200, 0.1); /* Horizontal offset, vertical offset, blur radius, color */
-    display: flex; /* Use flexbox */
+    display: flex;
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
     height: 90px; 
