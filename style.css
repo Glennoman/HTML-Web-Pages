@@ -3,7 +3,7 @@
 body {
     font-family: "Martel Sans", sans-serif; /* Applying Martel Sans as the default font for the entire document */
     background-image: url(/assets/bg.svg);
-    padding: 30px;
+    padding-left: 30px;
     margin: 0;
 }
  
@@ -13,35 +13,25 @@ a {
 
 header {
     display: flex; 
-    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items along the main axis */
+    align-items: center; /* Center items along the cross axis */
+    flex-direction: row;
 }
-
-header img {
-    margin-right: 10px; /* Add margin between the image and the paragraph */
-    margin-top: -15px; /* Adjust margin to move closer to the top */
-}
-
-/* logo-text */
-.header-logo {
+/* CLA Logo + CLA */
+.left-top {
+    display: flex; /* Ensure the items are aligned as flex items */
+    align-items: center; /* Center items vertically */
     font-weight: 800;
     font-style: normal;
     font-size: 25px;
-    margin-top: -5px; /* Adjust margin to move closer to the top */
 }
 
-.top-right-container {
-    position: relative; /* Set container to relative positioning */
-}
-
+/* Nav container */
 .top-right-corner {
-    position: absolute; /* Set the navigation bar to absolute positioning */
-    top: 5px; /* distance from the top */
-    right: 50px; /* distance from the right */
-}
-
-.top-right-corner a {
-    margin-right: 5px; /* Whitespace inbetween tags */
-    margin-top: 5px;
+    position: absolute;
+    /* top: 5px;  */
+    right: 30px;
 }
 
 .centered-top {
@@ -99,6 +89,65 @@ header img {
     margin-bottom: 150px;
     text-align: center;
 }
+
+/* Background color container */
+.background-container {
+    z-index: -1;
+    position: absolute;
+    width: 50%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(38, 15, 92);
+}
+
+/* Form container */
+.form-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the right */
+    align-items: flex-start; /* Center vertically */
+    height: auto; /* Ensure full height */
+    width: 300px;
+    right: 100px;
+    gap: 20px; /* Add some space between items */
+    background-color: rgba(255, 228, 196, 0.6);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(1, 1, 1, 0.2); /* Add shadow effect */
+}
+
+/* Individual columns */
+.col-2 {
+    flex-grow: 1;
+}
+
+/* container row */
+.col input {
+    display: block;
+    background-color: rgb(38, 15, 92);
+    border-radius: 5px; /* More rounded corners */
+    padding: 5px;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+}
+
+/* Image sign-up form */
+.image-join {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.image-join img {
+    display: flex;
+    
+}
+
 
 /* Square tiles 2x2 */
 .square-container {
@@ -252,13 +301,43 @@ button a {
     height: auto; /* Maintain aspect ratio */
 }
 
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .bottom-text,
+    .team-img {
+        width: 100%; /* Take up full width on smaller screens */
+        text-align: center; /* Center align content */
+    }
+}
+
 #testimonials {
-    text-align: center;
-    /* display: inline-block; */
-    position: relative;
-    left: 40%;
-    bottom: 100px;
-    width: 500px;
+    
+    margin: 50px auto; /* Add margin top and bottom, and set left and right margin to auto for horizontal centering */
+    padding: 20px; /* Add padding for better readability */
+    background-color: #f0f0f0; /* Set background color */
+    border-radius: 20px; /* Add border radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    max-width: 800px; /* Limit the width of the testimonials section */
+}
+
+#testimonials h2 {
+    font-size: 24px; /* Increase font size for the heading */
+    margin-bottom: 10px; /* Add some margin below the heading */
+}
+
+#testimonials p {
+    font-size: 16px; /* Adjust font size for paragraph text */
+    line-height: 1.6; /* Increase line height for better readability */
+    margin-bottom: 20px; /* Add margin below paragraphs */
+}
+
+#testimonials .author {
+    font-weight: bold; /* Make author name bold */
+}
+
+#testimonials .quote {
+    font-style: italic; /* Style quote text as italic */
+    color: #555; /* Dim the color of the quote text */
 }
 
 .contact-us-container {
@@ -275,7 +354,7 @@ button a {
     margin: 0px;
     width: 100%;
     border-radius: 5%;
-    overflow: visible;
+    /* overflow: visible; */
 }
 
 .contact-us-container button {
@@ -301,9 +380,15 @@ button a {
 }
 
 footer {
-    text-align: center;
-    color: white;
+    position: absolute; /* Set position to absolute */
+    bottom: 0; /* Align to the bottom of the main container */
+    width: 100%; /* Take up full width */
+    color: white; /* Set text color */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add padding for better spacing */
 }
+
+
 .martel-sans-extralight {
     font-family: "Martel Sans", sans-serif;
     font-weight: 200;
