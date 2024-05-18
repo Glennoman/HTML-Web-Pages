@@ -107,45 +107,101 @@ header {
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align items to the right */
-    align-items: flex-start; /* Center vertically */
-    height: auto; /* Ensure full height */
-    width: 300px;
-    right: 100px;
-    gap: 20px; /* Add some space between items */
-    background-color: rgba(255, 228, 196, 0.6);
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 500px; /* Ensure full height */
+    width: 500px;
+    top: 50%; /* Position according to viewport*/
+    left: 75%; /* Position according to viewport */
+    transform: translate(-50%, -50%); /* Adjust for the container's own dimensions */
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.785);
     padding: 20px;
     box-shadow: 0 4px 8px rgba(1, 1, 1, 0.2); /* Add shadow effect */
+    border-radius: 15px; /* Rounded edges for the container */
+}
+
+.form-container h1 {
+    position: relative;
+    bottom: 25px;
 }
 
 /* Individual columns */
-.col-2 {
-    flex-grow: 1;
+.col {
+    position: relative;
+    right: 90px;
 }
 
 /* container row */
 .col input {
-    display: block;
     background-color: rgb(38, 15, 92);
+    font-size: large;
+    color: #555;
     border-radius: 5px; /* More rounded corners */
-    padding: 5px;
-    color: white;
-    border: none;
-    outline: none;
-    margin-top: 5px;
+    padding: 15px;
+    margin-top: 15px;
+    width: 170%;
+    border: none; /* Removing default border */
+    box-sizing: border-box; /* padding does not affect width like this*/
 }
 
+/* sign up column */
+.col-2  {
+    position: relative;
+    right: 90px;
+}
+
+/* input modifications */
+.col-2 input {
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    width: 170%; 
+    background-color: rgb(50, 128, 222); /* Overriding the background color */
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* input modifications Login! */
+.col-3 input {
+    background-color: rgb(38, 15, 92);
+    font-size: large;
+    color: #555;
+    border-radius: 5px; /* More rounded corners */
+    padding: 15px;;
+    width: 434px;
+    border: none; /* Removing default border */
+    box-sizing: border-box; /* padding does not affect width like this*/
+}
+
+/* input modifications Login! */
+.col-4 input {
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgb(50, 128, 222);
+    color: white;
+    width: 434px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Testing settings */
+.form-container p {
+    text-align: center;
+}
 /* Image sign-up form */
 .image-join {
     display: flex;
-    justify-content: center;
-    position: relative;
-
+    align-items: center;
+    height: 100vh;
 }
 
 .image-join img {
-    display: flex;
-    
+    position: relative;
+    height: 50%;
+    width: auto;
+   left: 10%; 
 }
 
 

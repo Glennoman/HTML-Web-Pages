@@ -55,3 +55,11 @@ function checkAge(ageUser) {
   }
 let myself = createPerson("Glenn", 32, ["Coding", "Gym", "Traveling"])  
 console.log(myself)
+
+
+function describePerson(person) {
+    const { name, age, hobbies } = person;
+    console.log(`Name: ${name}`);
+    console.log(`Age: ${age}`);
+    console.log(`Hobbies: ${hobbies.join(', ')}`);
+  }
